@@ -1,0 +1,34 @@
+<style lang="less">
+</style>
+<template>
+  <view class="container">
+    <wxc-toast
+        class="J_toast"
+        text="Hello World"></wxc-toast>
+    <button bindtap="showToast">调用 show() 方法显示</button>
+  </view>
+
+</template>
+
+<script>
+  import wepy from 'wepy'
+
+  export default class Index extends wepy.page {
+    config = {
+      navigationBarTitleText: 'test',
+      usingComponents: {
+        'wxc-toast': '../../packages/@minui/wxc-toast/dist/index'
+      }
+    }
+
+    methods = {
+      showToast() {
+        let $toast = this.$wxpage.selectComponent('.J_toast')
+        $toast && $toast.show()
+      }
+    }
+    onLoad() {
+      console.log('onLoad')
+    }
+  }
+</script>
