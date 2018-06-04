@@ -11,9 +11,22 @@
   "author": "amwamw968 <270686859@qq.com>",
   "license": "MIT",
   "dependencies": {
+    "@minui/wxc-abnor": "^1.0.7",
+    "@minui/wxc-badge": "^1.0.5",
+    "@minui/wxc-countdown": "^1.0.5",
+    "@minui/wxc-counter": "^1.0.6",
+    "@minui/wxc-dialog": "^1.0.9",
+    "@minui/wxc-elip": "^1.0.5",
+    "@minui/wxc-icon": "^1.0.9",
+    "@minui/wxc-label": "^1.0.5",
+    "@minui/wxc-mask": "^1.0.8",
+    "@minui/wxc-price": "^1.0.8",
+    "@minui/wxc-progress": "^1.0.5",
     "@minui/wxc-toast": "^1.0.9",
     "babel": "^6.23.0",
-    "wepy": "^1.7.1"
+    "promise-polyfill": "^8.0.0",
+    "wepy": "^1.7.1",
+    "wepy-async-function": "^1.4.6"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
